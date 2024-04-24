@@ -22,6 +22,8 @@ class Platform(models.Model):
     city = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
     listed_date = models.DateField(auto_now_add=True)
+    image = models.ImageField(default='houses.png', blank=True)
+
 
     # image = models.ImageField()
 
